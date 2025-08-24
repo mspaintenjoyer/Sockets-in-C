@@ -5,22 +5,22 @@ Features
 - Tiny, self-contained C programs
 - Blocking I/O, single-connection-at-a-time server to keep it simple
 
-#Build
-Server:
+#Build 
+- Server:
 cc -O2 -Wall -Wextra echo_server.c -o echo_server
 
-#Client:
+- Client:
 cc -O2 -Wall -Wextra echo_client.c -o echo_client
 
-#Run
+- Run
 Start the server in one terminal:
 
 ./echo_server 127.0.0.1 8080
 
-In another terminal, run the client:
+- In another terminal, run the client:
 
 ./echo_client 127.0.0.1 8080 "hello world"
 
-Expected output from the client:
+- Expected output from the client:
 
 Echoed: hello world
